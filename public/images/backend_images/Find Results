@@ -1,0 +1,50 @@
+Searching 8474 files for "logo.png"
+
+C:\xampp\htdocs\admin\public\css\backend_css\matrix-style.css:
+   54  }
+   55  #header h1 {
+   56: 	background: url("/images/backend_images/logo.png") no-repeat scroll 0 0 transparent;
+   57  	height: 31px;
+   58  	left: 20px;
+
+C:\xampp\htdocs\admin\public\css\backend_css\matrix-style.css:
+   54  }
+   55  #header h1 {
+   56: 	background: url("/images/backend_images/logo.png") no-repeat scroll 0 0 transparent;
+   57  	height: 31px;
+   58  	left: 20px;
+
+C:\xampp\htdocs\admin\resources\views\admin\admin_login.blade.php:
+   15          <div id="loginbox">            
+   16              <form id="loginform" class="form-vertical" method="post" action="{{ url('admin') }}">{{ csrf_field() }}
+   17: 				 <div class="control-group normal_text"> <h3><img src="{{ asset('images/backend_images/logo.png') }}" alt="Logo" /></h3></div>
+   18                  <div class="control-group">
+   19                      <div class="controls">
+
+C:\xampp\htdocs\admin\storage\framework\views\b444bb1bc0fa2046d26344cce713b85319449e35.php:
+   16              <form id="loginform" class="form-vertical" method="post" action="<?php echo e(url('admin')); ?>"><?php echo e(csrf_field()); ?>
+   17  
+   18: 				 <div class="control-group normal_text"> <h3><img src="<?php echo e(asset('images/backend_images/logo.png')); ?>" alt="Logo" /></h3></div>
+   19                  <div class="control-group">
+   20                      <div class="controls">
+
+C:\xampp\htdocs\admin\vendor\nunomaduro\collision\README.md:
+    1  <p align="center">
+    2:     <img src="https://raw.githubusercontent.com/nunomaduro/collision/stable/docs/logo.png" alt="Collision logo" width="480">
+    3      <br>
+    4      <img src="https://raw.githubusercontent.com/nunomaduro/collision/stable/docs/example.png" alt="Collision code example" height="300">
+
+C:\xampp\htdocs\admin\vendor\swiftmailer\swiftmailer\doc\messages.rst:
+  228  
+  229      // You can attach files from a URL if allow_url_fopen is on in php.ini
+  230:     $message->attach(Swift_Attachment::fromPath('http://site.tld/logo.png'));
+  231  
+  232  Setting the Filename
+  ...
+  369      ' <body>' .
+  370      '  Here is an image <img src="' .
+  371:          $message->embed(Swift_Image::fromPath('http://site.tld/logo.png')) .
+  372         '" alt="Image" />' .
+  373      '  Rest of message' .
+
+7 matches across 6 files
