@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="{{  asset ('css/backend_css/bootstrap.min.css') }}" />
 		<link rel="stylesheet" href="{{  asset ('css/backend_css/bootstrap-responsive.min.css') }}" />
         <link rel="stylesheet" href="{{  asset ('css/backend_css/matrix-login.css') }}" />
-        <link href="{{ asset ('font-awesome/css/font-awesome.css') }}" rel="stylesheet" />
+        <!-- <link href="{{ asset ('css/backend_css/font-awesome.css') }}" rel="stylesheet" /> -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 
     </head>
@@ -16,13 +16,13 @@
         @if(Session::has('flash_message_error'))
         <div class="alert alert-error alert-block">
             <button type="button" class="close" data-dismiss="alert">X</button>
-            <strong>{!! session('flash_message_error') !!}</strong>
+            <center><strong>{!! session('flash_message_error') !!}</strong></center>
         </div>
         @endif
           @if(Session::has('flash_message_success'))
         <div class="alert alert-success alert-block">
             <button type="button" class="close" data-dismiss="alert">X</button>
-            <strong>{!! session('flash_message_success') !!}</strong>
+            <center><strong>{!! session('flash_message_success') !!}</strong></center>
         </div>
         @endif
          
