@@ -4,6 +4,19 @@
   <div id="content-header">
     <div id="breadcrumb"><a href="{{ url('admin/dashboard') }}" title="Go to Home" class="tip-bottom"> <a href="#" class="current">Settigns</a> </div>
     <h1>Настройки</h1>
+     @if(Session::has('flash_message_error'))
+        <div class="alert alert-error alert-block">
+            <button type="button" class="close" data-dismiss="alert">X</button>
+            <center><strong>{!! session('flash_message_error') !!}</strong></center>
+        </div>
+        @endif
+          @if(Session::has('flash_message_success'))
+        <div class="alert alert-success alert-block">
+            <button type="button" class="close" data-dismiss="alert">X</button>
+            <center><strong>{!! session('flash_message_success') !!}</strong></center>
+        </div>
+        @endif
+         
   </div>
   <div class="container-fluid"><hr>
     <div class="row-fluid">
@@ -14,7 +27,7 @@
               <h5>Обновить пароль</h5>
             </div>
             <div class="widget-content nopadding">
-              <form class="form-horizontal" method="post" action="#" name="password_validate" id="password_validate" novalidate="novalidate">
+              <form class="form-horizontal" method="post" action="{{ url('/admin/update-pwd') }}" name="password_validate" id="password_validate" novalidate="novalidate">{{ csrf_field() }}
                 <div class="control-group">
                   <label class="control-label">Текущий пароль</label>
                   <div class="controls">

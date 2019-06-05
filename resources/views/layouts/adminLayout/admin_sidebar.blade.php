@@ -1,17 +1,17 @@
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
   <ul>
-    <li class="active"><a href="index.html"><i class="icon icon-home"></i> <span>Панель управления</span></a> </li>
+    <li class="active"><a href="{{ url('/admin/dashboard')}}"><i class="icon icon-home"></i> <span>Панель управления</span></a> </li>
     <li> <a href="charts.html"><i class="icon icon-signal"></i> <span>Соц. сети</span></a> </li>
     <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>Группы</span></a> </li>
     <li><a href="tables.html"><i class="icon icon-th"></i> <span>Пользователи</span></a></li>
-    <!-- <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li> -->
-    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span></span></a>
+    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
+    <!-- <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span></span></a>
       <ul>
         <li><a href="form-common.html">Basic Form</a></li>
         <li><a href="form-validation.html">Form with Validation</a></li>
         <li><a href="form-wizard.html">Form with Wizard</a></li>
       </ul>
-    </li>
+    </li> -->
     <li><a href="buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>
     <li><a href="interface.html"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li>
     <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Addons</span></a>
