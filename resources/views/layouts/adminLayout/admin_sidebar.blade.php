@@ -1,17 +1,34 @@
-<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Панель управления</a>
   <ul>
     <li class="active"><a href="{{ url('/admin/dashboard')}}"><i class="icon icon-home"></i> <span>Панель управления</span></a> </li>
-    <li> <a href="charts.html"><i class="icon icon-signal"></i> <span>Соц. сети</span></a> </li>
-    <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>Группы</span></a> </li>
-    <li><a href="tables.html"><i class="icon icon-th"></i> <span>Пользователи</span></a></li>
-    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
-    <!-- <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span></span></a>
+    <li class="submenu"> <a href="#"><i class="icon icon-inbox"></i> <span>СМС категории</span> <span class="label label-important">2</span> </a>
       <ul>
-        <li><a href="form-common.html">Basic Form</a></li>
-        <li><a href="form-validation.html">Form with Validation</a></li>
-        <li><a href="form-wizard.html">Form with Wizard</a></li>
+        <li><a href="{{ url('/admin/add-category') }}">Добавить</a></li>
+        <li><a href="{{ url('/admin/view-categories') }}">Таблица</a></li>
+
       </ul>
-    </li> -->
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>Соц.сети</span><span class="label label-important">4</span> </a>
+      <ul>
+        <li><a href="form-common.html">Whatsapp</a></li>
+        <li><a href="form-validation.html">Facebook</a></li>
+        <li><a href="form-wizard.html">Telegram</a></li>
+        <li><a href="form-wizard.html">SMS</a></li>
+      </ul>
+    </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-inbox"></i> <span>Сообщения</span></a>
+      <ul>
+        <li><a href="form-common.html">План 1</a></li>
+        <li><a href="form-validation.html">План 2</a></li>
+        <li><a href="form-wizard.html">План 3</a></li>
+        <li><a href="form-wizard.html">План 4</a></li>
+      </ul>
+    </li>
+      <li><a href="tables.html"><i class="icon icon-user"></i> <span>Пользователи</span></a></li>
+    <li> <a href="widgets.html"><i class="icon icon-inbox"></i> <span>Группы </span></a> </li>
+
+    <li><a href="grid.html"><i class="icon icon-fullscreen"></i> <span>Full width</span></a></li>
+
     <li><a href="buttons.html"><i class="icon icon-tint"></i> <span>Buttons &amp; icons</span></a></li>
     <li><a href="interface.html"><i class="icon icon-pencil"></i> <span>Eelements</span></a></li>
     <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>Addons</span></a>
@@ -23,14 +40,7 @@
         <li><a href="chat.html">Chat option</a></li>
       </ul>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-info-sign"></i> <span>Error</span> </a>
-      <ul>
-        <li><a href="error403.html">Error 403</a></li>
-        <li><a href="error404.html">Error 404</a></li>
-        <li><a href="error405.html">Error 405</a></li>
-        <li><a href="error500.html">Error 500</a></li>
-      </ul>
-    </li>
+
     <!-- <li class="content"> <span>Monthly Bandwidth Transfer</span>
       <div class="progress progress-mini progress-danger active progress-striped">
         <div style="width: 77%;" class="bar"></div>

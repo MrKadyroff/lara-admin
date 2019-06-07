@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
-	
-	$('#new_pwd').click(function(){
+
+	$('#current_pwd').keyup(function(){
 		var current_pwd = $('#current_pwd').val();
 		$.ajax({
 				type:'get',
@@ -22,26 +22,24 @@ $(document).ready(function(){
 	});
 
 	$('input[type=checkbox],input[type=radio],input[type=file]').uniform();
-	
+
 	$('select').select2();
-	
+
+  $("#basic_validate").validate({});
 	// Form Validation
-    $("#basic_validate").validate({
+	// addCategory
+    $("#add_category").validate({
 		rules:{
-			required:{
+		category_name:{
+			required:true
+		},
+		description:{
 				required:true
+
 			},
-			email:{
+				url:{
 				required:true,
-				email: true
-			},
-			date:{
-				required:true,
-				date: true
-			},
-			url:{
-				required:true,
-				url: true
+
 			}
 		},
 		errorClass: "help-inline",
@@ -54,7 +52,31 @@ $(document).ready(function(){
 			$(element).parents('.control-group').addClass('success');
 		}
 	});
-	
+// editCategory
+	$("#edit_category").validate({
+	rules:{
+	category_name:{
+		required:true
+	},
+	description:{
+			required:true
+
+		},
+			url:{
+			required:true,
+
+		}
+	},
+	errorClass: "help-inline",
+	errorElement: "span",
+	highlight:function(element, errorClass, validClass) {
+		$(element).parents('.control-group').addClass('error');
+	},
+	unhighlight: function(element, errorClass, validClass) {
+		$(element).parents('.control-group').removeClass('error');
+		$(element).parents('.control-group').addClass('success');
+	}
+	});
 	$("#number_validate").validate({
 		rules:{
 			min:{
@@ -80,7 +102,7 @@ $(document).ready(function(){
 			$(element).parents('.control-group').addClass('success');
 		}
 	});
-	
+
 	$("#password_validate").validate({
 		rules:{
 			current_pwd:{
@@ -109,5 +131,13 @@ $(document).ready(function(){
 			$(element).parents('.control-group').removeClass('error');
 			$(element).parents('.control-group').addClass('success');
 		}
+	});
+
+	$('.deletebtn').click(function(){
+
+		if(confirm("Действительно удалить категорию?")){
+			return true;
+		}
+		return false;
 	});
 });

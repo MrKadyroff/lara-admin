@@ -6,17 +6,17 @@
     <h1>Настройки</h1>
      @if(Session::has('flash_message_error'))
         <div class="alert alert-error alert-block">
-            <button type="button" class="close" data-dismiss="alert">X</button>
+            <button type="button" class="close" data-dismiss="alert">x</button>
             <center><strong>{!! session('flash_message_error') !!}</strong></center>
         </div>
         @endif
           @if(Session::has('flash_message_success'))
         <div class="alert alert-success alert-block">
-            <button type="button" class="close" data-dismiss="alert">X</button>
+            <button type="button" class="close" data-dismiss="alert">x</button>
             <center><strong>{!! session('flash_message_success') !!}</strong></center>
         </div>
         @endif
-         
+
   </div>
   <div class="container-fluid"><hr>
     <div class="row-fluid">
