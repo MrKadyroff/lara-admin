@@ -72,4 +72,5 @@ class AdminController extends Controller
         return redirect('/admin')->with('flash_message_success', 'Logged out successfully.');
 
     }
+  
 }

@@ -140,4 +140,11 @@ $(document).ready(function(){
 		}
 		return false;
 	});
+	$('.deletebtnmsg').click(function(){
+
+		if(confirm("Действительно удалить сообщение?")){
+			return true;
+		}
+		return false;
+	});
 });
